@@ -18,4 +18,4 @@ while IFS=$'\t' read -r name ratio domain; do
     else
         echo -e " \033[0;31m✘\033[0m"
     fi
-done < ./servers.tsv
+done < "$1"
